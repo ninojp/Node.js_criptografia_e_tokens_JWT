@@ -46,3 +46,21 @@ A família SHA-2 consiste em seis funções de hash com resumos (valores de hash
 Para saber os detalhes, [Link](https://cursos.alura.com.br/course/nodejs-criptografia-tokens-jwt/task/107362)  
 
 ### Aula 02 - Qual a problemática da hash? - Video 3
+
+Nesta aula, o professor aborda a problemática da segurança das senhas dos usuários. Ele menciona que, apesar de não ser trivial descobrir a senha a partir da hash armazenada, existem processos que podem chegar perto de decifrar a senha. Uma dessas vulnerabilidades é o ataque conhecido como Rainbow Table, onde o atacante cria uma lista de hashes comprometidas e compara com a hash do banco de dados para descobrir a senha original. O professor ressalta a importância de implementar medidas adicionais para garantir a segurança das hashes e menciona que essas soluções serão abordadas no próximo vídeo.
+
+### Aula 02 - Adicionando “sal” na hash - Video 4
+
+Nesta aula, foi discutida a vulnerabilidade de senhas comuns e apresentada uma solução chamada "Hash com sal". Foi mostrado como adicionar um parâmetro extra à função de hash para tornar o processo mais seguro. Foi demonstrada a implementação dessa solução em um código JavaScript, utilizando o módulo crypto. Além disso, foi explicado como utilizar a "Hash com sal" para autenticar usuários. Foram apresentados exemplos de autenticação bem-sucedida e mal-sucedida. No próximo vídeo, será abordado como transmitir essa informação de maneira segura.
+
+### Aula 02 Conclusão - Nessa aula, você aprendeu
+
+O que são funções de hash e seu funcionamento prático para gerar dados que não podem ser restaurados à seu valor original;
+Quais são algumas de suas aplicações práticas, como o uso em sistemas de autenticação;
+A implementar os métodos do módulo crypto, como o createHash;
+Como utilizar o “sal” para melhorar a eficácia das hashes, aumentando drasticamente a quantidade de possibilidades existentes para um algoritmo de encriptação.
+
+## Aula 03 - Transmissão de Dados
+
+### Aula 03 - Transmitindo informações - Video 1
+
