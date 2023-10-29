@@ -32,3 +32,17 @@ A diferença entre Autorização e autenticação, isto é, a capacidade de conf
 ## Aula 02 - Utilizando o Módulo Crypto
 
 ### Aula 02 - Funções de hash - Video 1
+
+Nesta aula, o professor aborda o conceito de cifra sem retorno e introduz as funções de hash como uma alternativa. Ele explica que as funções de hash são processos irreversíveis de embaralhamento e encurtamento de informações. Existem diversos tipos de funções de hash, como MD5, SHA1 e SHA-256. Uma das principais aplicações das funções de hash é o armazenamento seguro de senhas. Ao invés de guardar as senhas em formato legível, é possível armazenar apenas as hashes das senhas. O professor ressalta que o ideal seria que nem mesmo as hashes fossem visíveis para terceiros, mas essa abordagem já é uma fundação para a segurança de sistemas.
+
+### Aula 02 - Utilizando funções de hash - Video 2
+
+Nesta aula do curso de Node.js: criptografia e tokens JWT, aprendemos como utilizar o módulo crypto para implementar a funcionalidade de hash em um projeto. O instrutor mostrou como importar as funções do módulo crypto, configurar o arquivo package.json para permitir a utilização do módulo com a sintaxe de importação do ES6 e criar uma função chamada criaHash que recebe uma senha como parâmetro e retorna a hash correspondente a essa senha. Também foi criada uma classe chamada Usuario, que possui um construtor para armazenar o nome e a hash correspondente à senha do usuário, e um método autentica para verificar se o nome e a senha fornecidos são válidos. A utilização da hash aumenta a segurança do sistema de autenticação, tornando mais difícil para um invasor obter a senha original a partir da hash armazenada.
+
+### Aula 02 - Para saber mais: tipos de hash
+
+MD5, SHA, SHA-0, SHA-1, SHA-2, SHA-3, RIPEMD-160, BLAKE2, BLAKE3.  
+A família SHA-2 consiste em seis funções de hash com resumos (valores de hash) que são SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/ 224, SHA-512/256. Elas são construídas com o intuito de serem muito resistentes à colisão.  
+Para saber os detalhes, [Link](https://cursos.alura.com.br/course/nodejs-criptografia-tokens-jwt/task/107362)  
+
+### Aula 02 - Qual a problemática da hash? - Video 3
