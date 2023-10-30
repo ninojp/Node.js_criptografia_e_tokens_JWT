@@ -133,6 +133,28 @@ O JWT (JSON Web Token) é um token que usa a anotação do JSON para armazenar a
 "O JWT é um padrão aberto que define uma forma segura de transmitir informação entre duas partes como um objeto JSON. Essa informação pode ser verificada e confiada, pois foi assinada digitalmente."  
 O corpo desse token decodificado vai ser constituído de três partes: cabeçalho (Header), dados (payload) e assinatura.
 
-[JWT Debuger](https://jwt.io/#debugger-io)
+[Componentes do JWT](https://www.brunobrito.net.br/jose-jwt-jws-jwe-jwa-jwk-jwks/)
+Site com informações detalhas sobre o JWT e suas variações
 
-### Aula 04 -  - Video 5
+[JWT Debuger](https://jwt.io/#debugger-io)  
+Plataforma para debug e testes de Arquivos JWT
+
+[Token.dev](https://token.dev/)
+Outra Plataforma para debug e testes de Arquivos JWT
+
+### Aula 04 - Implementando o token - Video 5
+
+Nesta aula, o instrutor ensina como utilizar o token JWT (JSON Web Token) em um projeto Node.js. Ele mostra como instalar a dependência do JWT, criar um arquivo package.json e importar o pacote JWT no arquivo token.js. Em seguida, ele explica como criar um token usando o método sign() do JWT, passando um objeto com os dados desejados e uma chave secreta. O instrutor também mostra como decodificar o token usando o método verify() do JWT, passando o token e a chave secreta. Ao executar o código, é possível observar o token gerado e os dados decodificados. O instrutor ressalta a importância de manter a chave secreta em segredo para garantir a segurança do token. Ele menciona que o campo iat é adicionado automaticamente ao token e fornece informações sobre outros campos sugeridos em um token JWT.
+
+### Aula 04 Conclusão - Nessa aula, você aprendeu
+
+- Como funcionam as assinaturas no contexto digital para garantir a autoria e integridade de uma mensagem;
+- O que é uma sessão e algumas formas como elas são implementadas - os identificadores únicos ou tokens;
+- O que são tokens e como eles são utilizados para autenticação ou transmissão de informação de forma segura;
+- O que é o token JWT. Seus parâmetros, campos e usos;
+- Como implementar uma assinatura com o Node e utilizar uma biblioteca para utilizar o token JWT.
+
+## Aula 05 - Conhecendo alguns ataques
+
+### Aula 05 - Algoritmos criptográficos
+
