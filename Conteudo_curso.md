@@ -109,7 +109,30 @@ Os conceitos de chaves compartilhadas, públicas e privada. Sendo as compartilha
 Como a encriptação simétrica e assimétrica usam essas chaves para decifrar as mensagens de forma prática e segura;
 A implementar essas funcionalidades dentro do Node com o módulo crypto.
 
-## Aula 04 - Transmissão de Dados
+## Aula 04 - Assinatura e JWT
 
-### Aula 04 -  - Video 1
+### Aula 04 - Assinatura - Video 1
 
+Nesta aula, foi abordado o conceito de assinatura digital como uma forma de validar a autoria de um documento ou informação. A assinatura digital utiliza uma chave privada para gerar uma hash do documento, e a chave pública é utilizada para verificar se a assinatura é válida e se a autoria é legítima. A assinatura digital é importante para garantir que uma mensagem foi gerada pela pessoa esperada e evitar que terceiros se passem por ela ou que a mensagem seja interceptada e alterada. Na próxima aula, será mostrado como implementar as assinaturas digitais em código.
+
+### Aula 04 - Implementando uma assinatura - Video 2
+
+Nesta aula, o instrutor ensina como implementar a assinatura digital em um projeto utilizando o Node.js. Ele explica como criar as chaves pública e privada, utilizando o módulo crypto, e como utilizar as funções generateKeyPairSync, createSign e createVerify para facilitar a implementação das assinaturas. O instrutor também mostra como assinar um documento e como verificar a assinatura. Ao final, ele faz um teste em que o documento é alterado antes da verificação, mostrando que a assinatura não é validada.
+
+### Aula 04 - Sessões e tokens - Video 3
+
+Nesta aula, o professor aborda os conceitos de sessões e tokens e sua relação com a segurança em sistemas. Ele explica que uma sessão é a quantidade de tempo em que o usuário está autenticado e conectado a um serviço ou sistema. Em seguida, é apresentada uma versão simplificada do protocolo HTTP para ilustrar o funcionamento das sessões. O professor também fala sobre o uso de tokens como uma alternativa ao uso de IDs. Ele explica que um token é uma hash de uma determinada informação e é enviado de volta para o usuário. O usuário guarda o token e o envia de volta ao servidor em suas requisições. O servidor valida o token decifrando a informação contida nele. O professor ressalta que tanto as sessões com IDs quanto o uso de tokens possuem vantagens e desvantagens, e é necessário estudar cada caso para determinar qual abordagem é mais adequada.
+
+### Aula 04 - Token JWT - Video 4
+
+Nesta aula, o instrutor discute sobre o JSON Web Token (JWT), que é um padrão aberto para transmitir informações de forma segura entre duas partes. O JWT é composto por cabeçalho, payload e assinatura. O cabeçalho contém informações sobre o token e o algoritmo utilizado, o payload contém os dados transmitidos e a assinatura garante a segurança do token. O instrutor menciona o site jwt.io, onde é possível realizar testes, visualizar informações e encontrar bibliotecas para implementar o JWT. Ele destaca a importância da assinatura e mostra como alterações podem invalidar o token. No próximo vídeo, será feita a implementação do JWT com uma biblioteca do jwt.io.
+
+O JWT (JSON Web Token) é um token que usa a anotação do JSON para armazenar as informações e guarda o dado de forma parecida com os Objetos no JavaScript.
+
+[JSON Web Token](https://jwt.io/introduction)
+"O JWT é um padrão aberto que define uma forma segura de transmitir informação entre duas partes como um objeto JSON. Essa informação pode ser verificada e confiada, pois foi assinada digitalmente."  
+O corpo desse token decodificado vai ser constituído de três partes: cabeçalho (Header), dados (payload) e assinatura.
+
+[JWT Debuger](https://jwt.io/#debugger-io)
+
+### Aula 04 -  - Video 5
