@@ -25,9 +25,7 @@ class Usuario{
     }
 }
 const jp = new Usuario("Nino JP", "senhaSecreta");
-
 console.log(jp);
-
 jp.autentica("Nino JP", "senhaSecreta");//OK
 jp.autentica("Nino", "senhaSecreta");//Falha
 jp.autentica("Nino JP", "senhaecreta");//Falha

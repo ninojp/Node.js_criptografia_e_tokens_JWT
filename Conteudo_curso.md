@@ -64,3 +64,52 @@ Como utilizar o “sal” para melhorar a eficácia das hashes, aumentando drast
 
 ### Aula 03 - Transmitindo informações - Video 1
 
+Nesta aula, foi abordado o tema da encriptação simétrica como forma de transmitir informações com mais segurança. Foi explicado que a função de hash não é adequada para transmitir informações, pois não pode ser decifrada. Para resolver esse problema, foi introduzido o conceito de encriptação simétrica, que utiliza um algoritmo de encriptação e uma chave compartilhada para cifrar e decifrar a mensagem. Ambas as partes envolvidas na comunicação precisam ter acesso à mesma chave. No próximo vídeo, será mostrado como a encriptação simétrica funciona na prática.
+
+### Aula 03 - Encriptação simétrica - Video 2
+
+Nesta aula, o instrutor ensina sobre encriptação simétrica utilizando o módulo crypto do Node.js. Ele mostra como criar uma cifra utilizando o algoritmo aes256 e como encriptar uma mensagem utilizando essa cifra. O instrutor também explica a importância de ter uma chave compartilhada e um vetor de inicialização para encriptar e decriptar a informação. Ele demonstra como utilizar os métodos createCipheriv, randomBytes e update para codificar a mensagem. Além disso, o instrutor mostra como decifrar a mensagem utilizando o método createDecipheriv e o método final. Ele também comenta sobre a transmissão da chave, vetor de inicialização e mensagem, e mostra como decifrar a mensagem utilizando a chave compartilhada. O instrutor ressalta que a chave é gerada aleatoriamente a cada execução do código, o que resulta em uma cifra diferente mesmo para a mesma mensagem.  
+
+> crypto.createCipheriv(algoritmo, chave, iv, opcoes)  
+
+- Percebemos então que o método aceita quatro parâmetros:
+  - algoritmo: é um dado do tipo string que está interligado com a biblioteca de implementação dos protocolos SSL e TLS, a OpenSSL . Alguns dos exemplos foram utilizados no curso, como aes256 ou rsa. Nas versões mais recentes da OpenSSL o comando no terminal openssl list -cipher-algorithms mostra os algoritmos de cifra disponíveis.
+  - chave (key): é a chave bruta usada pelo algoritmo e vetor de inicialização. A chave pode ser um KeyObject ou do tipo secret.
+  - iv: o vetor de inicialização que é responsável por fornecer um estado inicial. O iv precisa ser único ou imprevisível. O ideal é que seja criptografado de forma aleatória e não precisa ser secreto. Caso não necessite de um vetor de inicialização, o iv pode ser do tipo null.
+  - options (opções): o último parâmetro é um argumento opcional, que pode alterar o modo de operação da função, definindo algumas configurações específicas.
+
+> Método crypto.createDecipheriv()
+O método crypto.createDecipheriv() funciona de forma bem similar ao createCipheriv(). No entanto, a interface retorna um objeto Decipher e os parâmetros são os mesmos. Sua sintaxe é:
+
+### Aula 03 - Encriptação assimétrica - Video 3
+
+Nesta aula, foi abordado o conceito de encriptação assimétrica como uma solução para o compartilhamento seguro de chaves em ambientes de comunicação não seguros. Na encriptação assimétrica, utiliza-se um par de chaves: uma chave pública para criptografar as informações e uma chave privada para descriptografar os dados. A chave pública pode ser compartilhada livremente, enquanto a chave privada deve ser mantida em sigilo. Cada membro da comunicação deve possuir seu próprio par de chaves. No próximo vídeo, será mostrado como implementar e analisar o funcionamento da encriptação assimétrica.
+
+### Aula 03 - Implementando o código - Video 4
+
+Nesta aula, aprendemos como utilizar a criptografia assimétrica em JavaScript utilizando o módulo crypto. O objetivo foi gerar um par de chaves (chave pública e chave privada) e utilizar essas chaves para criptografar e descriptografar informações de maneira segura. Foi mostrado como criar um arquivo para implementar o código, importar a função generateKeyPairSync do módulo crypto para gerar o par de chaves, e utilizar os métodos publicEncrypt e privateDecrypt para realizar a criptografia e descriptografia, respectivamente. Também foi explicado como executar o programa no terminal e exibir os dados criptografados e descriptografados.
+
+> crypto.generateKeyPairSync( type, options)
+
+- type (tipo): É do tipo string e deve incluir um ou mais dos seguintes algoritmos: ‘rsa’, ‘dsa’, ‘ec’, ‘ed25519’, ‘ed448’, ‘x25519’, ‘x448’, ou ‘dh’.
+
+- options (opções): É do tipo objeto. Ele pode conter os parâmetros modulusLength; publicExponent; divisorLength; namedCurve; prime; primeLength; generator; groupName; publicKeyEncoding; privateKeyEncoding.
+
+### Aula 03 - Para saber mais: PGP (Pretty Good Privacy)
+
+Pretty Good Privacy (PGP), em português “privacidade muito boa”, é um sistema de criptografia utilizado para enviar e-mails criptografados e criptografar arquivos confidenciais. Desde sua invenção em 1991, por Phil Zimmermann, o PGP se tornou o padrão de fato para segurança de e-mail. Além de criptografar e descriptografar emails, o PGP também é utilizado para assinar mensagens para que o receptor possa verificar a identidade do remetente, assim como a integridade do seu conteúdo, tendo assim a comprovação de que arquivos ou e-mails não foram modificados por terceiros.
+
+A criptografia PGP utiliza uma combinação de duas formas de criptografia: criptografia de chave simétrica e criptografia de chave pública, em conjunto com combinação serial de hashing e compressão de dados, e cada passo utiliza algum dos vários algoritmos suportados. PGP usa uma chave privada que deve ser mantida secreta e uma chave pública que o receptor e remetente têm que compartilhar quando trocam mensagens.  
+[Detalhes aqui](https://cursos.alura.com.br/course/nodejs-criptografia-tokens-jwt/task/107371)
+
+### Aula 03 Conclusão - Nessa aula, você aprendeu
+
+Como transmitir informações de forma mais segura utilizando o conceito de encriptação: a cifra moderna;
+Os conceitos de chaves compartilhadas, públicas e privada. Sendo as compartilhadas um sistema de criptografia que mantém a chave entre o emissor e receptor da mensagem, ou seja, a mesma chave é utilizada para encriptar e desencriptar a mensagem ou arquivo; Já a chave pública funciona em conjunto com a privada, e atua como uma assinatura digital, ela pode ser compartilhada; Por outro lado, a chave privada é mantida em segredo e utilizada para desencriptar as mensagens ou arquivos autenticados pela chave pública;
+Como a encriptação simétrica e assimétrica usam essas chaves para decifrar as mensagens de forma prática e segura;
+A implementar essas funcionalidades dentro do Node com o módulo crypto.
+
+## Aula 04 - Transmissão de Dados
+
+### Aula 04 -  - Video 1
+
