@@ -156,5 +156,22 @@ Nesta aula, o instrutor ensina como utilizar o token JWT (JSON Web Token) em um 
 
 ## Aula 05 - Conhecendo alguns ataques
 
-### Aula 05 - Algoritmos criptográficos
+### Aula 05 - Algoritmos criptográficos - Video 1
 
+Nesta aula, o instrutor fala sobre algoritmos criptográficos. Ele explica que eles são usados em funções como createHash('SHA256') e na criação de chaves. Existem vários algoritmos criptográficos, e a hash é apenas um tipo de transformação. O instrutor compara as hashes MD4 e SHA256, mostrando que mesmo tendo a mesma entrada, elas possuem saídas diferentes devido aos diferentes algoritmos criptográficos. O tamanho da hash pode variar de acordo com o algoritmo utilizado. O instrutor apresenta uma tabela com alguns algoritmos criptográficos da família SHA, mostrando o tamanho de saída, a segurança contra ataques de colisão e extensão de comprimento, e a data de publicação de cada algoritmo. Ele menciona que as vulnerabilidades não estão diretamente relacionadas ao algoritmo, mas sim à vulnerabilidade dos sistemas que podem ser desenvolvidos. Ele promete falar mais sobre essas vulnerabilidades e fazer algumas demonstrações no próximo vídeo. 🎃👻
+
+### Aula 05 - Ataques criptográficos - Video 2
+
+Nesta aula, o professor aborda diferentes tipos de ataques de vulnerabilidade em aplicações ou sistemas, com foco principalmente em ataques de autenticação. Os tipos de ataques mencionados são:
+
+Ataque de força bruta: tentativa exaustiva de todas as combinações possíveis de uma senha para obter acesso a um sistema.
+Ataque de dicionário: uso de uma lista de senhas comuns e fracas para tentar obter acesso a um sistema.
+Ataque de rainbow table: utilização de uma lista de hashes de senhas conhecidas e fracas para tentar obter acesso a um sistema. Esse tipo de ataque é utilizado quando as senhas são armazenadas como hashes em vez de serem armazenadas em texto simples. No próximo vídeo, o professor irá demonstrar um código para visualizar como esses ataques funcionam. 🎃👻
+
+### Aula 05 - Ataque de força bruta - Video 3
+
+Nesta aula, o instrutor ensina como simular um ataque de força bruta em um sistema de autenticação utilizando JavaScript. É mostrado como criar um arquivo chamado "forcaBruta.js" e modificar o código do usuário para realizar o ataque. Também é mencionado que existem formas de se proteger contra esse tipo de ataque.
+
+### Aula 05 - Ataque de dicionário - Video 4
+
+Nesta aula, o instrutor demonstrou o ataque de dicionário em um código simulado. Foi criada uma lista de senhas comuns e o código percorreu essa lista, tentando autenticar-se com cada senha. Caso a autenticação fosse bem-sucedida, a senha correta era exibida na tela. O instrutor mencionou que as formas de mitigar esse tipo de ataque são semelhantes às soluções do ataque de força bruta, como limitar o número de tentativas de autenticação e ter uma política de senha que não permita senhas comuns. No próximo vídeo, será demonstrado o ataque de "rainbow table". 🎃👻
