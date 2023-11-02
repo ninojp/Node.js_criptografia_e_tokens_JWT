@@ -175,3 +175,5 @@ Nesta aula, o instrutor ensina como simular um ataque de força bruta em um sist
 ### Aula 05 - Ataque de dicionário - Video 4
 
 Nesta aula, o instrutor demonstrou o ataque de dicionário em um código simulado. Foi criada uma lista de senhas comuns e o código percorreu essa lista, tentando autenticar-se com cada senha. Caso a autenticação fosse bem-sucedida, a senha correta era exibida na tela. O instrutor mencionou que as formas de mitigar esse tipo de ataque são semelhantes às soluções do ataque de força bruta, como limitar o número de tentativas de autenticação e ter uma política de senha que não permita senhas comuns. No próximo vídeo, será demonstrado o ataque de "rainbow table". 🎃👻
+
+Ataque rainbow table
