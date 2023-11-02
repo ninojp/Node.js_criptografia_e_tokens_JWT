@@ -190,4 +190,18 @@ Quais recursos e atitudes podemos utilizar para mitigar problemas relacionados �
 
 ### Aula 06 - Fatores humanos - Video 1
 
+Nesta aula, o professor destaca a importância dos fatores humanos no desenvolvimento de aplicações e na segurança das mesmas. Ele menciona que, mesmo com sistemas técnicos seguros, é fundamental que os usuários e colaboradores adotem boas práticas para evitar brechas de segurança. São mencionados exemplos de más práticas, como o compartilhamento de credenciais de acesso entre usuários. O professor ressalta que identificar a origem do problema não serve para culpar, mas sim para investigar e lidar com a situação da melhor forma possível. Além disso, ele menciona que algumas más práticas podem ser reflexo de políticas de segurança mal implementadas. No próximo vídeo, será abordado o equilíbrio entre conveniência e segurança nessas situações.
 
+### Aula 06 - Determinando requisitos - Video 2
+
+Nesta aula, foi abordado o equilíbrio entre segurança e conveniência na autenticação de sistemas com múltiplos agentes e usuários. Foram discutidos os requisitos de senha, como tamanho, presença de letras maiúsculas e minúsculas, números e caracteres especiais, questionando sua necessidade e eficácia. Também foi destacada a importância de considerar a facilidade de memorização e a segurança das senhas. Além disso, foi mencionado que nem sempre as escolhas feitas em sistemas existentes garantem a máxima segurança criptográfica, sendo influenciadas pela expectativa dos usuários e sensação de segurança ao inserir uma senha. A próxima aula abordará as dependências e bibliotecas utilizadas em sistemas de segurança.
+
+### Aula 06 - Dependências do projeto - Video 3
+
+Nesta aula, o palestrante discute a importância de entender as dependências de código em um projeto, utilizando como exemplo a biblioteca JSON Web Token (JWT). Ele destaca a necessidade de verificar o código-fonte, as atualizações e as informações sobre os mantenedores das dependências, a fim de tomar decisões informadas e contribuir com as iniciativas. O palestrante menciona que o site do NPM possui informações sobre o pacote do JSON Web Token, incluindo o repositório onde o código está implementado. Ele ressalta que é possível verificar como foram implementados os códigos, já que a maioria dos códigos no site são abertos. Além disso, o palestrante menciona que o JSON Web Token é uma dependência para outros pacotes, e que é importante considerar as atualizações e como elas podem afetar a compatibilidade com o código existente. Ele destaca que alterações em dependências podem causar problemas em cascata. Por fim, o palestrante enfatiza a importância de saber em quem ou em que estamos dependendo, seja uma pessoa ou uma organização, e menciona que o JSON Web Token é mantido pela organização "auth0", trazendo mais confiança ao utilizá-lo como dependência.
+
+### Aula 06 Conclusão - Nessa aula, você aprendeu
+
+Fatores humanos e quais considerações devemos levar em conta quando estamos desenvolvendo sistemas;
+Como escolher requisitos de forma crítica e ponderar sobre as decisões de segurança;
+Os cuidados que devemos tomar com as dependências que utilizamos e tentar conhecer os riscos associados.
