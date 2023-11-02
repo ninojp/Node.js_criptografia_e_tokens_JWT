@@ -176,4 +176,18 @@ Nesta aula, o instrutor ensina como simular um ataque de força bruta em um sist
 
 Nesta aula, o instrutor demonstrou o ataque de dicionário em um código simulado. Foi criada uma lista de senhas comuns e o código percorreu essa lista, tentando autenticar-se com cada senha. Caso a autenticação fosse bem-sucedida, a senha correta era exibida na tela. O instrutor mencionou que as formas de mitigar esse tipo de ataque são semelhantes às soluções do ataque de força bruta, como limitar o número de tentativas de autenticação e ter uma política de senha que não permita senhas comuns. No próximo vídeo, será demonstrado o ataque de "rainbow table". 🎃👻
 
-Ataque rainbow table
+### Aula 05 - Ataque rainbow table - Video 5
+
+Nesta aula, o instrutor explica como implementar um ataque de "rainbow table". Ele mostra um código em que são definidas as hashes vazadas e como criar uma rainbow table com as senhas comuns. Em seguida, é mostrado como percorrer as hashes vazadas e compará-las com as da rainbow table para descobrir as senhas correspondentes. O instrutor menciona que a solução para esse tipo de ataque é utilizar uma hash com sal e ter mais aspectos que dificultem a descoberta da senha. Na próxima aula, serão abordados os fatores humanos e as políticas de senha.
+
+### Aula 05 Conclusão - Nessa aula, você aprendeu
+
+O que são exatamente os algoritmos criptográficos e quais parâmetros existem em cada um;
+Alguns ataques (Rainbow Table, Força Bruta e Dicionário) e as vulnerabilidades que podemos estar sujeitos e devemos ter atenção enquanto implementamos soluções;
+Quais recursos e atitudes podemos utilizar para mitigar problemas relacionados à nossa infraestrutura tecnológica.
+
+## Aula 06 - Considerando a parte humana
+
+### Aula 06 - Fatores humanos - Video 1
+
+

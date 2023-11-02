@@ -13,10 +13,10 @@ console.log(rainbowTable);
 
 const hashesVazadas = ["21232f297a57a5a743894a0e4a801fc3","cedf5ab7b5c5852b3ed35d7dbe3c3835","81dc9bdb52d04dc20036dbd8313ed055"]
 
-hashesVazadas.map(hashesVazadas => {
+hashesVazadas.map(hashVazada => {
     rainbowTable.map(parGerado => {
-        if(hashesVazadas === parGerado[1]){
-            console.log(``);
+        if(hashVazada === parGerado[1]){
+            console.log(`Senha encontrada: a hash é ${hashVazada} equivale a ${parGerado[0]}`);
         }
     })
 });
